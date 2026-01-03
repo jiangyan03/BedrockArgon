@@ -6,7 +6,9 @@
 > https://github.com/glibcxx/PowerAssociationMapLeakFix 已完成
 * 2.CircuitSceneGraph::removeComponent的重构，减少红石更新的Pending Remove的巨大卡顿
 正在重构中 未完成
-* 3.活塞的bug
+* 3.漏斗的bug
+拟修复，未来计划
+* 4.随机刻bug
 拟修复，未来计划
 
 剩下的待更新中~~~

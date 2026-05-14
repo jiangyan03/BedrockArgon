@@ -12,7 +12,8 @@
 #include <LLAPI.h>
 // #include <MC/CircuitSceneGraph.hpp>
 // #include <MC/BaseCircuitComponent.hpp>
-#include "PowerAssociationMapLeakFix.h"  
+#include "PowerAssociationMapLeakFix.h"
+#include "Timerfix.h"
 
 //  Logger
 Logger logger("BedrockArgon");
@@ -37,7 +38,11 @@ void PluginInit() {
     CheckProtocolVersion();
     try {
         if (!PowerAssociationMapLeakFix::installHook()) {
-            logger.error("Failed to install hook. Plugin will not continue.");
+            logger.error("Failed to install PowerAssociationMapLeakFix hook. Plugin will not continue.");
+            return;
+        }
+        if (!TimerFix::installHook()) {
+            logger.error("Failed to install TimerFix hook. Plugin will not continue.");
             return;
         }
     } catch (const std::exception& e) {

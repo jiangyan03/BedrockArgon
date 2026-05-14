@@ -4,11 +4,13 @@
 这个插件只为基岩板1.18.2优化进行服务
 * 1.PowerAssociationMap容器资源泄露和巨量卡顿
 > https://github.com/glibcxx/PowerAssociationMapLeakFix 已完成
-* 2.CircuitSceneGraph::removeComponent的重构，减少红石更新的Pending Remove的巨大卡顿
+* 2.Timerfix
+> https://github.com/glibcxx/TimerFix 已完成
+* 3.CircuitSceneGraph::removeComponent的重构，减少红石更新的Pending Remove的巨大卡顿
 正在重构中 未完成
-* 3.漏斗的bug
+* 4.漏斗的bug
 拟修复，未来计划
-* 4.随机刻bug
+* 5.随机刻bug
 拟修复，未来计划
 
 剩下的待更新中~~~
